@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
+<schema name="product-testing" version="1.6">
+    <uniqueKey>productId</uniqueKey>
+    <fieldType name="binary" class="solr.BinaryField"/>
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    <fieldType name="date" class="solr.TrieDateField" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType name="double" class="solr.TrieDoubleField" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType name="float" class="solr.TrieFloatField" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType name="int" class="solr.TrieIntField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+    <fieldType name="long" class="solr.TrieLongField" positionIncrementGap="0" precisionStep="0"/>
+    <fieldType name="random" class="solr.RandomSortField" indexed="true"/>
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
+    <fieldType name="tdate" class="solr.TrieDateField" sortMissingLast="true"/>
+    <fieldType name="tfloat" class="solr.TrieFloatField" positionIncrementGap="0" precisionStep="8"/>
+    <fieldType name="tint" class="solr.TrieIntField" positionIncrementGap="0" precisionStep="8"/>
+    <fieldType name="tlong" class="solr.TrieLongField" positionIncrementGap="0" precisionStep="8"/>
+    <field name="_version_" type="long" indexed="true" stored="true"/>
+    <field name="productName" type="string" indexed="true" stored="true"/>
+    <field name="productId" type="string" indexed="true" stored="true"/>
+    <field name="brand" type="string" indexed="true" stored="true"/>
+    <field name="category" type="string" indexed="true" stored="true"/>
+    <field name="merchantId" type="string" indexed="true" stored="true"/>
+    <field name="image" type="string" indexed="true" stored="true"/>
+    <field name="price" type="int" indexed="true" stored="true"/>
+    <field name="description" type="string" indexed="true" stored="true"/>
+    <field name="stockSold" type="int" indexed="true" stored="true"/>
+    <field name="productReview" type="string" indexed="true" stored="true"/>
+    <field name="stock" type="int" indexed="true" stored="true"/>
+    <field name="productUsp" type="string" indexed="true" stored="true"/>
+    <dynamicField name="random_*" type="random"/>
+</schema>
